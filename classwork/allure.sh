@@ -1,5 +1,5 @@
 #!/bin/zsh
 
-pytest --alluredir=allure-result .
+pytest --alluredir=allure-results .
 sleep 1
-allure serve allure-result
+allure serve allure-results

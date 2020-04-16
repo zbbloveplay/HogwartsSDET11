@@ -1,3 +1,6 @@
+# =========================
+#   第一步：导入依赖
+# =========================
 import os
 from time import sleep
 
@@ -12,7 +15,10 @@ class TestHogwarts:
     browser="reuse"
 
     def setup_method(self):
-        browser = os.getenv("browser", "").lower() if self.browser=="" else self.browser
+        # =========================
+        #   第二步：创建 webdrive
+        # =========================
+        browser = os.getenv("browser", "").lower() if self.browser == "" else self.browser
         print(browser)
 
         if browser == "phantomjs":
